@@ -15,6 +15,8 @@ class Settings(BaseSettings):
     POSTGRES_USER: str
     POSTGRES_PASSWORD: str
     POSTGRES_DB: str
+    SECRET_KEY: str
+    ALGORITHM: str
 
     @property
     def db_url(self):
@@ -27,5 +29,10 @@ class Settings(BaseSettings):
             f"{self.POSTGRES_PORT}/" +
             f"{self.POSTGRES_DB}"
         )
-    
+
+    @property
+    def auth_data(self):
+        """Property returns authentification settings"""
+        return {"secret_key": settings.SECRET_KEY, "algorithm": settings.ALGORITHM}
+
 settings = Settings()
