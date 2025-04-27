@@ -111,11 +111,11 @@ fastapi-shop /
 │   │   dependencies.py                        # Модуль для создания сессии
 │   │   main.py                                # Главный файл приложения
 │   │   models.py                              # Классы моделей
-│   │   \__init__.py
+│   │   __init__.py
 │   │
 │   ├───auth
 │   │       auth_handler.py                    # Модуль для настройки аутентификации
-│   │       \__init__.py
+│   │       __init__.py
 │   │
 │   ├───db
 │   │       database.py                        # Модуль для настройки подключения к БД
@@ -136,7 +136,7 @@ fastapi-shop /
 │   │       product.py                         # Роутер товаров
 │   │       task.py                            # Роутер для решения задачи оптимизации
 │   │       user.py                            # Роутер пользователей
-│   │       \__init__.py
+│   │       __init__.py
 │   │
 │   ├───schemas                                # Схемы Pydantic
 │   │       category.py                        # Схемы Pydantic для категорий
@@ -154,7 +154,7 @@ fastapi-shop /
 │           user_service.py                    # Сервис пользователей
 │
 └───tests                                      # Тесты
-    │   \__init__.py
+    │   __init__.py
     │
     ├───admin_auth                             # Тесты при авторизованном администраторе
     │       conftest.py                        # Конфигурационный файл тестов
